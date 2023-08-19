@@ -17,6 +17,7 @@ const ContactForm = () => {
       return;
     }
     dispatch(addContactThunk(contactData));
+    form.reset();
   };
   return (
     <form onSubmit={handleSubmit}>
