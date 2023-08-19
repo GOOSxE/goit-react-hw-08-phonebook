@@ -15,7 +15,6 @@ const LoginForm = () => {
         password,
       })
     );
-    form.reset();
   };
   return (
     <form onSubmit={handleSubmit}>

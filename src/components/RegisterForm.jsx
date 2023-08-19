@@ -17,7 +17,6 @@ const RegisterForm = () => {
         password,
       })
     );
-    form.reset();
   };
 
   return (
