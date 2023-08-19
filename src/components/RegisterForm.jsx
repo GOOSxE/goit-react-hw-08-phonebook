@@ -6,12 +6,10 @@ const RegisterForm = () => {
   const dispatch = useDispatch();
   const handleSubmit = event => {
     event.preventDefault();
-
     const form = event.currentTarget;
     const name = form.elements.userName.value;
     const email = form.elements.userEmail.value;
     const password = form.elements.userPassword.value;
-
     dispatch(
       registerUserThunk({
         name,
@@ -19,6 +17,7 @@ const RegisterForm = () => {
         password,
       })
     );
+    form.reset();
   };
 
   return (
